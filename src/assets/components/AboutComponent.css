@@ -1,0 +1,45 @@
+/* Estilo para la sección principal 'About' */
+.about{
+    margin-left: 15%; /* Deja un espacio de 15% desde la izquierda de la pantalla */
+    margin-top: 12%; /* Deja un espacio de 12% desde la parte superior de la pantalla */
+    margin-bottom: 12%; /* Deja un espacio de 12% en la parte inferior */
+    background-color: rgb(217, 220, 223); /* Color de fondo gris claro */
+    border-color: orange; /* Color del borde: naranja */
+    border-style: groove; /* Estilo de borde: surco (con bordes 3D) */
+    padding: 10px; /* Añade un relleno de 10px en todos los lados */
+    max-width: 1000px; /* Establece el ancho máximo de la sección en 1000px */
+}
+
+/* Estilo para la línea separadora */
+.separator{
+    margin-top: 8%; /* Deja un espacio de 8% desde la parte superior */
+    height: 10px; /* Establece la altura de la línea separadora */
+    background-color: black; /* Color de fondo: negro */
+    border: none; /* Elimina cualquier borde extra */
+    overflow: hidden; /* Asegura que cualquier contenido que se desborde no sea visible */
+}
+
+/* Estilo para la sección de información personal 'info_About' */
+.info_About{
+    margin-top: 5%; /* Deja un margen de 5% desde la parte superior */
+    text-align: center; /* Centra el texto dentro de la sección */
+    margin-bottom: 5%; /* Deja un margen de 5% en la parte inferior */
+}
+
+/* Estilo para la subsección 'info_About-2' */
+.info_About-2{
+    margin-top: 5%; /* Deja un margen de 5% desde la parte superior */
+    text-align: center; /* Centra el texto dentro de la subsección */
+    margin-bottom: 5%; /* Deja un margen de 5% en la parte inferior */
+}
+
+/* Estilo para los encabezados dentro de 'info_About-2' */
+.info_About-2 > h3{
+    text-align: center; /* Centra los encabezados dentro de la subsección */
+    padding-bottom: 15px; /* Añade un relleno de 15px en la parte inferior del encabezado */
+}
+
+/* Estilo para los párrafos y listas dentro de 'info_About' */
+.info_About > p, .info_About > li{
+    text-align: center; /* Centra el texto dentro de los párrafos y las listas */
+}

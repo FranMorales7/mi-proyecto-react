@@ -1,0 +1,54 @@
+/* Se importa una fuente desde Google Fonts: "Delius Swash Caps" */
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+
+/* Estilo para el contenedor principal del formulario de contacto */
+#contact {
+    margin-top: -40%; /* Desplaza el contenedor hacia arriba, sacándolo parcialmente de la pantalla */
+    margin-bottom: 20%; /* Da espacio debajo del formulario */
+}
+
+/* Línea horizontal separadora en la sección de contacto */
+.contactSeparator {
+    margin-top: 8%; /* Espacio superior */
+    margin-left: 23%; /* Centra la línea horizontal en la pantalla */
+    height: 10px; /* Altura de la línea */
+    background-color: black; /* Color de la línea */
+    border: none; /* Sin bordes */
+    overflow: hidden; /* Oculta cualquier contenido fuera de los límites */
+    width: 1000px; /* Longitud de la línea */
+    margin-bottom: 5%; /* Espacio debajo de la línea */
+}
+
+/* Estilo para el contenedor principal del formulario y el mensaje de contacto */
+.divContent {
+    margin-left: 30%; /* Centra el contenedor horizontalmente */
+    margin-top: 10%; /* Espacio superior */
+    margin-bottom: 20%; /* Espacio inferior */
+    background-color: rgb(217, 220, 223); /* Color de fondo suave */
+    border-color: orange; /* Color del borde */
+    border-style: groove; /* Estilo de borde tipo surco */
+    padding: 10px; /* Relleno interno */
+    max-width: 700px; /* Ancho máximo del contenedor */
+}
+
+/* Estilo para el texto introductorio del formulario */
+.getContact {
+    font-family: "Delius Swash Caps", serif; /* Fuente personalizada importada */
+    font-weight: 400; /* Peso de la fuente */
+    font-style: normal; /* Estilo normal de la fuente */
+    font-size: 15pt; /* Tamaño de fuente */
+}
+
+/* Estilo para los elementos input y textarea en el formulario */
+input, textarea {
+    background-color: antiquewhite; /* Color de fondo de los campos */
+    margin-bottom: 10px; /* Espacio inferior entre los campos */
+    margin-right: 100%; /* Eliminar margen derecho (evita desalineaciones en algunos navegadores) */
+    color: black; /* Color del texto en los campos */
+}
+
+/* Estilo específico para el campo textarea (área de texto) */
+textarea {
+    width: 250px; /* Ancho del campo textarea */
+    height: 100px; /* Alto del campo textarea */
+}

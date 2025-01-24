@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Delius+Swash+Caps&display=swap'); /* Importa la fuente 'Agbalumo' y 'Delius Swash Caps' desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap'); /* Importa la fuente 'Wallpoet' desde Google Fonts */
+
+/* Estilo principal para el contenedor de contenido */
+.mainStyle{
+    color: black; /* Establece el color del texto en negro */
+    margin-left: 5%; /* Aplica un margen izquierdo del 5% */
+    margin-top: 0; /* No hay margen superior */
+}
+
+/* Estilo para el primer texto, nombre 'Francisco' */
+.intro{
+    text-align: start; /* Alinea el texto al inicio (izquierda en la mayoría de los casos) */
+    margin-top: 6%; /* Aplica un margen superior del 6% */
+    font-size: 90px; /* Establece el tamaño de fuente en 90 píxeles */
+    font-family: "Agbalumo", serif; /* Usa la fuente 'Agbalumo' */
+    font-weight: 400; /* Establece el peso de la fuente en 400 (normal) */
+    font-style: normal; /* Define el estilo de la fuente como normal (sin cursiva) */
+}
+
+/* Estilo para el segundo texto, apellido 'Morales' */
+.intro_2{
+    text-align: start; /* Alinea el texto al inicio (izquierda) */
+    font-size: 90px; /* Establece el tamaño de la fuente en 90 píxeles */
+    font-family: "Agbalumo", serif; /* Usa la fuente 'Agbalumo' */
+    font-weight: 400; /* Establece el peso de la fuente en 400 (normal) */
+    font-style: normal; /* Define el estilo de la fuente como normal (sin cursiva) */
+    margin-left: 100px; /* Aplica un margen izquierdo de 100 píxeles */
+}
+
+/* Estilo para el subtítulo 'Web Developer' */
+.subName{
+    font-family: "Wallpoet", serif; /* Usa la fuente 'Wallpoet' */
+    font-weight: 400; /* Establece el peso de la fuente en 400 (normal) */
+    font-style: normal; /* Define el estilo de la fuente como normal */
+    font-size: larger; /* Aumenta el tamaño de la fuente en relación con el tamaño de la fuente heredada */
+    margin-left: 180px; /* Aplica un margen izquierdo de 180 píxeles */
+    text-shadow: 2px 2px 5px rgb(6, 2, 255); /* Aplica una sombra de texto de 2px de desplazamiento y 5px de difuminado en color RGB */
+}
+
+/* Estilo para el contenedor de información adicional */
+.info{
+    max-width: fit-content; /* Ajusta el ancho del contenedor según el contenido */
+    text-align: start; /* Alinea el texto al inicio (izquierda) */
+    margin-top: 2%; /* Aplica un margen superior del 2% */
+    margin-left: 3%; /* Aplica un margen izquierdo del 3% */
+    margin-right: 3%; /* Aplica un margen derecho del 3% */
+    font-size: 15pt; /* Establece el tamaño de la fuente a 15 puntos */
+    font-family: "Delius Swash Caps", serif; /* Usa la fuente 'Delius Swash Caps' */
+    font-weight: 400; /* Establece el peso de la fuente en 400 (normal) */
+    font-style: normal; /* Define el estilo de la fuente como normal */
+    border-style: solid; /* Aplica un borde sólido alrededor del contenedor */
+    border-width: 4px; /* Establece el grosor del borde en 4 píxeles */
+    padding: 10px; /* Aplica un relleno de 10 píxeles en el contenedor */
+    background-color: rgb(255, 181, 69); /* Establece el color de fondo en un tono naranja claro */
+    color: rgb(87, 87, 87); /* Establece el color del texto en un gris oscuro */
+}
+
+/* Animación de entrada gradual (fade-in) */
+@keyframes fadeIn {
+    0% {
+      opacity: 0; /* El texto comienza invisible */
+    }
+    100% {
+      opacity: 1; /* El texto termina completamente visible */
+    }
+}
+
+/* Se aplica la animación 'fadeIn' a los elementos con las clases .intro, .intro_2 y .subName */
+.intro, .intro_2, .subName {
+    animation: fadeIn 3s ease-in; /* Aparece en 3 segundos con una animación suave (ease-in) */
+}
+
+/* Estilo para la imagen de perfil */
+img{
+    margin-top: -300px; /* Aplica un margen superior negativo para desplazar la imagen hacia arriba */
+    max-height: 450px; /* Limita la altura máxima de la imagen a 450 píxeles */
+    margin-right: -85%; /* Aplica un margen derecho negativo para mover la imagen hacia la izquierda */
+}

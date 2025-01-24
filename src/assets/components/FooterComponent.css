@@ -1,0 +1,54 @@
+/* Estilos generales del footer */
+.footer {
+    margin-top: 0; /* Elimina cualquier margen superior */
+    background-color: rgb(80, 78, 78); /* Color de fondo oscuro */
+    color: orange; /* Color del texto */
+    width: 100%; /* El footer ocupa todo el ancho de la pantalla */
+    height: fit-content; /* Ajusta la altura automáticamente según el contenido */
+    font-size: 20pt; /* Tamaño del texto */
+    text-align: center; /* Centra el texto */
+    z-index: 10; /* Prioridad en el apilado sobre otros elementos */
+    display: flex; /* Flexbox para organizar el contenido */
+    position: relative; /* Permite ajustar la posición con respecto a otros elementos */
+    bottom: 0; /* Posiciona el footer en la parte inferior si es necesario */
+}
+
+/* Estilos para la imagen del logo dentro del footer */
+.logoImage {
+    display: flex; /* Flexbox para facilitar la alineación */
+    justify-content: start; /* Alinea la imagen a la izquierda */
+    margin-top: 5px; /* Espaciado superior */
+    margin-bottom: 5px; /* Espaciado inferior */
+    margin-left: 15px; /* Espaciado a la izquierda */
+    max-width: auto; /* Permite ajustar dinámicamente el ancho del logo */
+    max-height: 110px; /* Establece una altura máxima para la imagen */
+}
+
+/* Estilos para la sección de redes sociales */
+.socialContent {
+    display: flex; /* Flexbox para alinear los elementos horizontalmente */
+    justify-content: space-between; /* Espacia uniformemente los elementos */
+    margin-left: 25%; /* Espaciado hacia la derecha desde el borde izquierdo */
+    margin-top: 2.5%; /* Espaciado hacia abajo */
+}
+
+/* Estilos para la sección de derechos de autor */
+.copyRightContent {
+    position: absolute; /* Posiciona el contenido respecto al contenedor padre */
+    top: 50%; /* Centra verticalmente el contenido */
+    right: 10%; /* Ajusta la distancia desde el borde derecho */
+    font-size: 12pt; /* Tamaño de fuente más pequeño */
+}
+
+/* Estilos generales para las listas */
+ul {
+    display: flex; /* Flexbox para alinear los elementos de la lista horizontalmente */
+    justify-content: space-between; /* Espaciado uniforme entre los elementos */
+}
+
+/* Estilos individuales para los elementos de la lista */
+li {
+    list-style: none; /* Elimina el estilo de viñeta predeterminado */
+    margin-left: 15px; /* Espaciado entre elementos hacia la izquierda */
+    margin-right: 15px; /* Espaciado entre elementos hacia la derecha */
+}

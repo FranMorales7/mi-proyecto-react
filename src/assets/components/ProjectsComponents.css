@@ -1,0 +1,175 @@
+/* Importación de fuentes desde Google Fonts para estilizar el texto del sitio */
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Delius+Swash+Caps&display=swap');
+
+/* Estilo principal del contenedor */
+.divMain {
+    margin-top: 40%; /* Define un margen superior para posicionar el contenido */
+    margin-bottom: 30%; /* Define un margen inferior para espaciarlo del contenido siguiente */
+}
+
+/* Separador visual de los proyectos */
+.projectSeparator {
+    margin-top: -45%; /* Ajusta la posición superior del separador */
+    height: 10px; /* Grosor del separador */
+    background-color: black; /* Color del separador */
+    border: none; /* Elimina bordes predeterminados */
+    overflow: hidden; /* Oculta el contenido que sobresalga */
+    max-width: 1200px; /* Ancho máximo del separador */
+    margin-left: 17%; /* Posiciona el separador horizontalmente */
+    margin-bottom: 10%; /* Espaciado inferior */
+    width: 1000px; /* Ancho del separador */
+}
+
+/* Estilo del texto introductorio de los proyectos */
+.pProjects {
+    font-family: "Agbalumo", serif; /* Fuente personalizada */
+    font-weight: 400; /* Grosor de la fuente */
+    font-style: normal; /* Estilo de fuente */
+    font-size: 20pt; /* Tamaño del texto */
+    display: flex; /* Estilo de diseño flexible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin-bottom: 15%; /* Espaciado inferior */
+}
+
+/* Contenedor principal de los proyectos */
+.contentProjects {
+    display: flex; /* Diseño flexible para organizar los elementos hijos */
+    justify-content: center; /* Centra los proyectos horizontalmente */
+}
+
+/* Estilo individual para cada proyecto */
+.divProject, .divProject2, .divProject3 {
+    position: relative; /* Posiciona el elemento en relación a su contenedor */
+    width: 500px; /* Ancho de los proyectos */
+    height: 500px; /* Altura de los proyectos */
+    border-radius: 10%; /* Bordes redondeados */
+}
+
+/* Margen y posición específicos para el primer proyecto */
+.divProject {
+    margin-top: 20%; /* Espaciado superior */
+    margin-bottom: -800px; /* Ajusta el espaciado inferior */
+}
+
+/* Margen y posición específicos para el segundo proyecto */
+.divProject2 {
+    margin-top: 19%; /* Espaciado superior */
+    margin-left: 5%; /* Margen izquierdo */
+    margin-right: 5%; /* Margen derecho */
+    margin-bottom: 15%; /* Espaciado inferior */
+}
+
+/* Margen y posición específicos para el tercer proyecto */
+.divProject3 {
+    margin-top: 20%; /* Espaciado superior */
+}
+
+/* Estilo común para las burbujas decorativas */
+.bubble, .bubble2, .bubble3 {
+    position: relative; /* Posiciona las burbujas en relación a su contenedor */
+    width: 300px; /* Ancho de la burbuja */
+    height: 300px; /* Altura de la burbuja */
+    background-size: cover; /* Asegura que la imagen de fondo cubra toda la burbuja */
+    top: 50px; /* Ajusta la posición vertical */
+    margin-left: -75%; /* Margen izquierdo para alineación */
+    border-radius: 50%; /* Hace la burbuja circular */
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25); /* Sombra interior */
+    animation: animate 8s ease-in-out infinite; /* Animación de movimiento */
+    margin-bottom: 200%; /* Espaciado inferior */
+}
+
+/* Fondo específico para la burbuja del primer proyecto */
+.bubble {
+    background-image: url("../media/ahorcado_game.png");
+}
+
+/* Fondo específico para la burbuja del segundo proyecto */
+.bubble2 {
+    background-image: url("../media/game_store.png");
+}
+
+/* Fondo específico para la burbuja del tercer proyecto */
+.bubble3 {
+    background-image: url("../media/blackjack_game.png");
+}
+
+/* Contenedor para las burbujas */
+.contentBubble {
+    display: inline-block; /* Organiza los elementos en línea */
+}
+
+/* Posición específica de la segunda burbuja */
+.contentBubble:nth-child(2) {
+    position: relative; /* Posiciona en relación a otros elementos */
+    left: 70%; /* Desplaza hacia la derecha */
+    top: -20px; /* Ajusta la posición vertical */
+}
+
+/* Posición específica de la tercera burbuja */
+.contentBubble:nth-child(3) {
+    position: relative;
+    top: -20px;
+}
+
+/* Estilo común para los elementos decorativos internos de las burbujas */
+.bubble span, .bubble2 span, .bubble3 span {
+    position: absolute; /* Posición fija dentro de la burbuja */
+    border-radius: 50%; /* Elementos circulares */
+}
+
+/* Detalles de cada elemento decorativo en las burbujas */
+.bubble span:nth-child(1), .bubble2 span:nth-child(1), .bubble3 span:nth-child(1) {
+    inset: 10px; /* Tamaño y posición */
+    border-left: 15px solid #0fb4ff; /* Borde izquierdo azul */
+    filter: blur(8px); /* Difuminado para un efecto suave */
+}
+
+/* Repite para cada elemento con diferentes colores y posiciones */
+.bubble span:nth-child(2), .bubble2 span:nth-child(2), .bubble3 span:nth-child(2) {
+    inset: 10px;
+    border-right: 15px solid #ff4484; /* Borde derecho rosa */
+    filter: blur(8px);
+}
+
+.bubble span:nth-child(3), .bubble2 span:nth-child(3), .bubble3 span:nth-child(3) {
+    inset: 20px;
+    border-top: 15px solid #ffeb3b; /* Borde superior amarillo */
+    filter: blur(8px);
+}
+
+.bubble span:nth-child(4), .bubble2 span:nth-child(4), .bubble3 span:nth-child(4) {
+    inset: 30px;
+    border-left: 15px solid #ff4484; /* Borde izquierdo rosa */
+    filter: blur(12px);
+}
+
+.bubble span:nth-child(5), .bubble2 span:nth-child(5), .bubble3 span:nth-child(5) {
+    inset: 10px;
+    border-bottom: 15px solid #fff; /* Borde inferior blanco */
+    filter: blur(8px);
+    transform: rotate(330deg); /* Rotación para un efecto dinámico */
+}
+
+/* Elementos decorativos adicionales dentro de las burbujas */
+.bubble::before, .bubble2::before, .bubble3::before {
+    content: ''; /* Crea un elemento vacío decorativo */
+    position: absolute;
+    top: 50px;
+    left: 45px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Circular */
+    background: #fff; /* Blanco */
+    z-index: 10; /* Capa superior */
+    filter: blur(2px); /* Efecto de difuminado */
+}
+
+/* Animación de las burbujas */
+@keyframes animate {
+    0%, 100% {
+        transform: translate(-20px, -30px); /* Inicio y fin de la animación */
+    }
+    50% {
+        transform: translate(20px, 30px); /* Punto medio de la animación */
+    }
+}
